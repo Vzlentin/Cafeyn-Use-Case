@@ -1,0 +1,88 @@
+/* Center the article container */
+.article-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the article card */
+.article-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Style the category */
+.category {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Style the article title */
+.article-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Style the article description */
+.article-description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Style the article content */
+.article-content {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Style the 'Read More' link */
+.read-more {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Style the feedback section */
+.feedback {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.feedback a {
+    font-size: 2em;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.feedback a:hover {
+    color: #007BFF;
+}
+
+/* Style the navigation buttons */
+.navigation {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 0 15px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
+}

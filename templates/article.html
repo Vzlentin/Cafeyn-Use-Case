@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ article.title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="article-container">
+        <div class="article-card">
+            <div class="category">{{ article.category }}</div>
+            <h2 class="article-title">{{ article.title }}</h2>
+            <p class="article-description">{{ article.description }}</p>
+            {% if article.content %}
+                <div class="article-content">{{ article.content }}</div>
+            {% else %}
+                <a href="{{ url_for('article', article_id=article.article_id) }}" class="read-more">Read More</a>
+            {% endif %}
+            <div class="feedback">
+                <a href="{{ url_for('thumbs_up', article_id=article.article_id) }}" class="thumbs-up">👍</a>
+                <a href="{{ url_for('thumbs_down', article_id=article.article_id) }}" class="thumbs-down">👎</a>
+            </div>
+        </div>
+        <div class="navigation">
+            {% if can_go_back %}
+                <a href="{{ url_for('previous_article') }}" class="nav-button">Back</a>
+            {% endif %}
+            <a href="{{ url_for('next_article') }}" class="nav-button">Next</a>
+        </div>
+    </div>
+</body>
+</html>
