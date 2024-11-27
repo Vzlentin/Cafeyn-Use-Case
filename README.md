@@ -1,4 +1,4 @@
-# Project Summary: Article Recommendation System Enhancement
+# Article Recommendation System Enhancement - Cafeyn
 
 ## Introduction
 
